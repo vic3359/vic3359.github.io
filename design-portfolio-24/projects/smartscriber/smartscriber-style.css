@@ -1,0 +1,379 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+/* Poppins Font */
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+    
+
+  
+ /* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* Ensures full viewport height */
+    color: #fcfcfc;
+    background-color: #6A6EC6;
+    padding: 0;
+  }
+
+  
+.hero-logo {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-logo img {
+    width: 100%
+}
+
+.hero h2 {
+        font-size: 1.8rem;font-weight: 500;
+}
+
+.hero-body {
+    display: flex;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;    
+    width: auto;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;  /* Prevents image overflow */
+}
+
+.hero-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 2rem;
+    padding-right: 0%;
+}
+
+.hero-wrapper img {
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+
+ /* LOGO BANNER */
+ .logobanner {
+    background-color: #6A6EC6;
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+
+ }
+
+ .logobanner img {
+    width: 100%;
+ }
+
+ /* Main Body Section */
+
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    gap: 4rem;
+    width: 100%;
+}
+
+
+ /* Main Body Fonts */
+.main-layout h1 {
+    font-size: 2rem;
+    color: #6A6EC6; 
+}
+
+.main-layout h2{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.main-layout ul{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+li {
+    list-style-position: inside;
+    padding-left: 20px;
+    text-indent: -1em;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    gap: 2rem;
+}
+
+.body-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.container-img-wrapper {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-img-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.persona-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: #E7E7F4;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.persona-container h1 {
+    font-weight: 600;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.end-marker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 800px;
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+.end-line {
+    height: 1px;
+    width: 100%;
+    background-color: #666666;
+}
+
+@media (max-width: 768px) {
+    /* Styles for mobile */
+    .hero-body {
+        flex-direction: column;
+        padding: 2rem 1rem 2rem 1rem;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+    .hero-logo {
+        width: 100%;
+    }
+    .hero-wrapper {
+        flex: 2;
+    }
+    
+    .main-layout {
+        padding: 1.2rem;
+        gap: 3rem;
+    }
+    .main-layout h1 {
+        font-size: 1.4rem;
+    }
+   }
+
+/* Basic carousel styles */
+.carousel {
+    position: relative;
+    padding: 2rem 0rem 2rem 16% ;
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    height: 80vh;
+    flex-shrink: 0;
+    border-radius: 2rem; /* Optional: adds rounded corners */
+    object-fit: cover; /* Ensures the image fills the container neatly */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for a polished look */
+
+
+  }
+  
+  /* Hide the carousel on larger screens */
+  @media (min-width: 768px) {
+    .carousel {
+      display: none; /* Hides the carousel on screens larger than 768px */
+    }
+    .desktop-mockup {
+        display: flex
+    }
+  }
+  
+  /* Display the carousel on smaller screens */
+  @media (max-width: 767px) {
+    .carousel {
+      display: block; /* Displays the carousel on screens smaller than 768px */
+    }
+    .desktop-mockup {
+        display: none
+    }
+  }
+  
+  .carousel-wrapper, .carousel-slide {
+    overflow: visible; /* Prevents clipping */
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.indicator.active {
+    background-color: #6A6EC6; /* Highlight active marker */
+}
+
