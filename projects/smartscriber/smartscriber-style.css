@@ -304,6 +304,11 @@ li {
         text-align: center;
         height: 100%;
     }
+
+    .hero-text-wrapper {
+      justify-content: flex-start;
+    }
+
     .hero-logo {
         width: 100%;
     }
