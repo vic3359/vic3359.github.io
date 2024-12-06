@@ -124,6 +124,7 @@ html, body {
     gap: 2rem;
 }
 
+/* Scroll Fade Class */
 .scroll-fade {
   opacity: 0;
 }
