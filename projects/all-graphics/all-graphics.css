@@ -135,6 +135,7 @@ li {
   gap: 3rem;
   align-items: center;
   margin-bottom: 2rem;
+  scroll-margin-top: 4rem;
 }
 
 .leftbox {
