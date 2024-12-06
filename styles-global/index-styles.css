@@ -269,6 +269,11 @@ video {
   background-color: #00000015;
 }
 
+.listing-card.dark:hover {
+  background-color: #ffffff30;
+}
+
+
 .listing-img-wrapper {
   border-radius: 1rem;
   aspect-ratio: 1/1;
