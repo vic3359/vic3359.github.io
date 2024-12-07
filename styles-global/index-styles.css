@@ -213,7 +213,7 @@ html, body {
 /* Style for the video */
 video {
   width:100vw;
-  height: 100vh;
+  height: 100svh;
   object-fit: cover;
   position: absolute;
   z-index: 0;
