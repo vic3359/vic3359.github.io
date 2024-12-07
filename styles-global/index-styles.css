@@ -131,18 +131,18 @@ html, body {
 
 .title-fade {
   opacity: 1;
-  animation: title-fade 2s;
+  animation: title-fade 1s;
 }
 
 /* animate the titles */
 @keyframes title-fade {
   0% {
     opacity: 0;
-    transform: translateY(-2rem);
+    transform: translateY(-1rem);
   }
   10% {
     opacity: 0;
-    transform: translateY(-2rem);
+    transform: translateY(-1rem);
   }
   100% {
     opacity: 1;
@@ -448,6 +448,7 @@ video {
     max-width: 100%;
     gap: 1rem;
   }
+
   .cta-banner{
     flex-direction: column;
     padding: 1rem;
@@ -464,10 +465,6 @@ video {
 
   .footer {
     flex-direction: column;
-  }
-
-  .footer a {
-    font-size: 1.2rem;
   }
   
   .footer-left{
