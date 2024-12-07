@@ -34,6 +34,8 @@
     text-decoration: none;
     transition: color 0.3s;
     color: #666666;
+    display: block; /* Makes the <a> behave like a block-level element */
+    width: 100%;    /* Ensures the <a> fills the full width of the container */
 }
 
 .navbar-links a:hover {
