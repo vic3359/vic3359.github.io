@@ -1,0 +1,180 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+* navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fcfcfc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    transition: color 0.3s;
+    color: #666666;
+}
+
+.navbar-links a:hover {
+    color: #000000;
+}
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000000;
+}
+
+/* Dropdown Menu for Mobile */
+.navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%; /* Ensure the dropdown fills the screen */
+    background-color: #fcfcfc;
+    padding: 2rem 2rem;
+    top: 4rem; /* Adjust based on navbar height */
+    left: 0; /* Ensure dropdown starts from the left edge */
+    position: absolute;
+    font-size: 1rem;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.10);
+    animation: slideDown 0.5s;
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-10%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+      padding: 0.8rem 2rem;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 4rem 1rem 4rem 1rem;
+    background-color: #000000;
+    position: relative;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-right: 1px solid #fff;
+    padding: 0.4rem 4rem 0 0;
+  }
+  
+  .social-link{
+    display: flex;
+    gap: 0.5rem;
+    flex: 1;
+  }
+  
+  .logo-wrapper {
+    height: 1.2rem;
+    width: fit-content;
+  }
+  
+  .social-link a {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+  
+  .footer-right {
+    display: flex;
+  }
+  
+  .directory-column{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 4rem;
+    gap: 1rem;
+  }
+  
+  .directory-column a {
+    font-size: 0.9rem;
+    color: #e1e1e1;
+    text-decoration: none;
+    font-weight: 300;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    /* Styles for mobile */
+  
+    .footer {
+      flex-direction: column;
+    }
+    
+    .footer-left{
+      border-right: 0;
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      padding-bottom: 2rem;
+      gap: 2rem;
+    }
+  
+    .footer-right{
+      flex-direction: column;
+      gap: 3rem;
+      padding-top: 1rem;
+    }
+  
+    .directory-column {
+      padding: 1rem 0 0 0;
+      gap: 1rem;
+    }
+  
+    }

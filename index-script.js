@@ -1,10 +1,33 @@
-//navbar
-const toggleBtn = document.getElementById('toggle-btn');
-const navbarLinks = document.querySelector('.navbar-links');
+// //navbar
+// const toggleBtn = document.getElementById('toggle-btn');
+// const navbarLinks = document.querySelector('.navbar-links');
 
-toggleBtn.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
+// toggleBtn.addEventListener('click', () => {
+//     navbarLinks.classList.toggle('active');
+// });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("toggle-btn");
+  const navbarLinks = document.getElementById("navbar-links");
+  const links = document.querySelectorAll(".navbar-links a"); // Select all links within the navbar
+
+  // Toggle menu visibility
+  toggleBtn.addEventListener("click", function () {
+    const isExpanded = toggleBtn.getAttribute("aria-expanded") === "true";
+    toggleBtn.setAttribute("aria-expanded", !isExpanded);
+    navbarLinks.classList.toggle("active");
+  });
+
+  // Close navbar menu when clicking any of the navbar links
+  links.forEach((link) => {
+    link.addEventListener("click", function () {
+      navbarLinks.classList.remove("active"); // Close the entire menu
+      toggleBtn.setAttribute("aria-expanded", "false"); // Reset toggle button
+    });
+  });
 });
+
+
 
 //scroll-fade
 const elements = document.querySelectorAll('.scroll-fade'); // Select all elements with class 'scroll-fade'

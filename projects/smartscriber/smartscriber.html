@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smartscriber</title>
-    <link rel="stylesheet" href="/styles-global/styles.css"> <!-- Global CSS -->
+    <link rel="stylesheet" href="/styles-global/index-styles.css"> <!-- Global CSS -->
+    <script src="/index-script.js" defer></script> <!-- Global Script -->
     <link rel="stylesheet" href="../smartscriber/smartscriber-style.css"> <!-- Project CSS -->
 
     <!-- Google Font (Poppins) -->
@@ -24,18 +25,18 @@
 
     <!-- NAVBAR -->
     <nav class="navbar">
-    <img src="/images-global/VICENT KOH-logotype.svg" style="height: 1;" onclick="window.location.href='/index.html';" onmouseover="this.style.cursor='pointer';">
-    <ul class="navbar-links">
-        <li><a href="#pagetop">Back to top</a></li>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/index.html#productdesign">Product Design</a></li>
-        <li><a href="/index.html#graphicdesign">Graphic Design</a></li>
-        <li><a href="/index.html#illustrations">Illustrations</a></li>
-        <li><a href="#About Me">About me</a></li>
-        <li><a href="#Contact">Contact</a></li>
-
-    </ul>
-    <button class="navbar-toggle" id="toggle-btn">☰</button>
+        <img src="/images-global/VICENT KOH-logotype.svg" style="height: 1rem;" 
+             onclick="window.location.href='/index.html';" 
+             onmouseover="this.style.cursor='pointer';">
+        <ul class="navbar-links" id="navbar-links">
+            <li><a href="#pagetop">Back to top</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#productdesign">Product Design</a></li>
+            <li><a href="/index.html#graphicdesign">Graphic Design</a></li>
+            <li><a href="/index.html#illustrations">Illustrations</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+        </ul>
+        <button class="navbar-toggle" id="toggle-btn" aria-expanded="false" aria-controls="navbar-links">☰</button>
     </nav>
     
 
@@ -328,6 +329,58 @@
 
 
     </div> 
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-left">
+            <div class="logo-wrapper">
+                <img src="/images-global/VICENT KOH-logotype-white.svg" alt="logo" width="100%" height="100%">
+            </div>
+
+            <div class="social-link">
+                <img src="/images-global/mail.svg" alt="mail">
+                <a href="mailto:vicentstudio24@gmail.com" style="color: #e1e1e1; text-decoration: none;">vicentstudio24@gmail.com</a>
+            </div>
+
+            <div class="social-link">
+                <img src="/images-global/linkedin.png" alt="linkedin" width="auto" height="24px">
+                <a href="https://linkedin.com/in/vicent-koh-112894204" style="color: #e1e1e1; text-decoration: none;">Connect with me on LinkedIn!</a>            
+            </div>
+        </div>
+
+        <!-- Site Directory -->
+        <div class="footer-right">
+            <div class="directory-column">
+                <a style="font-weight: 600;" href="/index.html">Homepage</a>
+                <a style="font-weight: 600;" href="/index.html#contact">Contact</a>
+            </div>
+            
+            <div class="directory-column">
+                <a style="font-weight: 600;" href="/index.html#productdesign">Product Design</a>
+                <a href="/projects/flexii/flexii.html">Flexii</a>
+                <a href="/projects/smartscriber/smartscriber.html">Smartscriber</a>
+                <a href="/projects/other-projects/other-projects.html">Other Projects</a>
+            </div>
+
+            <div class="directory-column">
+                <a style="font-weight: 600;" href="/index.html#graphicdesign">Graphic Design</a>
+                <a href="/projects/all-graphics/all-graphics.html">Monsa</a>
+                <a href="/projects/all-graphics/all-graphics.html#clenstea">Clenstea</a>
+                <a href="/projects/all-graphics/all-graphics.html#other-graphics">Others</a>
+            </div>
+
+            <div class="directory-column">
+                <a style="font-weight: 600;" href="/index.html#illustrations">Illustrations</a>
+                <a href="/projects/all-illustrations/all-illustrations.html">Flexii - Values Poster</a>
+                <a href="/projects/all-illustrations/all-illustrations.html#etsy-arts">Linearts - Etsy Store</a>
+                <a href="/projects/all-illustrations/all-illustrations.html#others">Others</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; padding:0 0 0.5rem 1rem; background-color: #000000;">
+        <p style="color: #e1e1e1;font-size: 0.7rem;">"VICENT KOH - PORTFOLIO" Designed and developed by Vicent Koh (HTML/CSS/JS) </p>
+    </div>
 
     
 

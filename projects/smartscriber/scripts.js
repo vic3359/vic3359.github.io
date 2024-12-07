@@ -91,7 +91,9 @@ updateCarouselPadding();
 window.addEventListener('resize', updateCarouselPadding);
 
 
-//Moving Banner Scripts
+
+
+
 
 
 

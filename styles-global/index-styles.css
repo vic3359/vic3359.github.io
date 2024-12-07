@@ -11,75 +11,99 @@ html {
   }
   
 html, body {
-    width: 1vw%;
+    width: 100vw;
     margin: 0;
     background-color: #F5F5F9;
   }
   
-    /* NAVBAR */
-
+  /* navbar */
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: #fcfcfc;
-    position: sticky; /* Makes the navbar sticky */
-    top: 0; /* Sticks to the top of the viewport */
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     z-index: 3;
-  }
-  
-  .navbar-links {
+}
+
+.navbar-links {
     display: flex;
     list-style: none;
     gap: 1.5rem;
-    font-size: 14px;
+    font-size: 0.8rem;
     font-weight: 400;
-  }
-  
-  .navbar-links a {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links a {
     text-decoration: none;
     transition: color 0.3s;
     color: #666666;
-  }
-  
-  .navbar-links a:hover {
+}
+
+.navbar-links a:hover {
     color: #000000;
-  }
-  
-  /* Responsive design */
-  .navbar-toggle {
+}
+
+.navbar-toggle {
     display: none;
     background: none;
     border: none;
-    color: white;
     font-size: 1.5rem;
-  }
-  
-  .navbar-links.active {
-    display: block;
+    cursor: pointer;
+    color: #000000;
+}
+
+/* Dropdown Menu for Mobile */
+.navbar-links.active {
+    display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
+    width: 100%; /* Ensure the dropdown fills the screen */
+    background-color: #fcfcfc;
+    padding: 2rem 2rem;
+    top: 4rem; /* Adjust based on navbar height */
+    left: 0; /* Ensure dropdown starts from the left edge */
+    position: absolute;
+    font-size: 1rem;
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.10);
+    animation: slideDown 0.5s;
+}
+
+@keyframes slideDown {
+  from {
+      transform: translateY(-10%);
+      opacity: 0;
   }
-  
-  @media (max-width: 768px) {
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+      padding: 0.8rem 2rem;
+    }
+
     .navbar-links {
-      display: none;
-      flex-direction: column;
-      gap: 1rem;
-      background-color: #444;
-      padding: 1rem;
-      position: absolute;
-      top: 4rem;
-      right: 1rem;
-      border-radius: 5px;
+        display: none;
+        flex-direction: column;
+        gap: 1rem;
     }
-  
+
     .navbar-toggle {
-      display: block;
+        display: block;
     }
-  }
+}
+
 
   
   /* Hero Section */
