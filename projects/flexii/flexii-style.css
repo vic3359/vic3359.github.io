@@ -107,6 +107,8 @@ background-color: #f1f1f1;  height: calc(100svh - 3rem);
     display: flex;
     overflow: hidden;
     justify-content: center;
+    height: 100%; /* Prevent overflowing the parent */
+
 }
 
 
@@ -115,7 +117,6 @@ background-color: #f1f1f1;  height: calc(100svh - 3rem);
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 100vh;
 }
 
 .hero-text-wrapper {
@@ -231,7 +232,6 @@ li {
         padding: 2rem 1rem 2rem 1rem;
         justify-content: center;
         text-align: center;
-        height: 90%;
     }
 
     .hero h2 {
@@ -251,6 +251,10 @@ li {
 
     .hero-logo img {
       width: 60%;
+  }
+
+  .hero-wrapper{
+    height: auto;
   }
   
     
