@@ -206,8 +206,6 @@ li {
     height: auto;
 }
 
-
-
 .end-marker {
     display: flex;
     justify-content: center;
@@ -225,7 +223,7 @@ li {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     /* Styles for mobile */
     .hero-body {
         flex-direction:column-reverse;
@@ -284,7 +282,7 @@ li {
       font-size: 1rem;
       text-align: left;
     }
-   }
+  }
 
 /* Scroll Fade Class */
 .scroll-fade {
@@ -311,5 +309,3 @@ li {
     transform: translateY(0);
   }
 }
-
-

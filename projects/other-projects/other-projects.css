@@ -205,6 +205,9 @@ li {
     height: auto;
 }
 
+.responsive-img {
+  padding: 0 10% 0 10%;
+}
 
 
 .end-marker {
@@ -279,6 +282,10 @@ li {
       font-weight: 500;
       font-size: 1rem;
       text-align: left;
+    }
+
+    .responsive-img {
+      padding: 0 5% 0 5%;
     }
    }
 
