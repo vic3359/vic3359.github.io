@@ -47,6 +47,23 @@ elements.forEach(element => {
   observer.observe(element);
 });
 
+//refresh-prevent scrollTo section (only on index.html)
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if the current page is index.html
+  if (window.location.pathname === "/" || window.location.pathname.endsWith("index.html")) {
+    // Check if the URL contains a hash
+    if (window.location.hash) {
+      // Remove the hash without causing a page jump
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+
+    // Scroll to the top
+    window.scrollTo(0, 0);
+  }
+});
+
+
+
 
 
 
