@@ -12,13 +12,14 @@
 </head>
 <body>
 
+    <!-- Navbar -->
     <header>
         <img src="/projects/mind20/image/mind20-logo.svg" alt="mind20 logo">
         <nav>
             <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">the 2.0 formula</a></li>
-                <li><a href="#">frequently asked question</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#the20formula">the 2.0 formula</a></li>
+                <li><a href="#faq">frequently asked question</a></li>
                 <li><a href="#">contact us</a></li>
             </ul>
         </nav>
@@ -47,7 +48,7 @@
         </section>
 
         <!-- about mind2.0 -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="about-container">
                 <img src="/projects/mind20/image/mind20-iphone-mockup.png" style="height: 50vh;" alt="mind20-iphone-mockup">
 
@@ -63,7 +64,7 @@
         </section>
 
         <!-- the 2.0 formula -->
-        <section class="the20formula">
+        <section class="the20formula" id="the20formula">
 
             <div class="the20formula-container">
                 <div class="title-style">
@@ -114,7 +115,7 @@
         </section>
 
         <!-- faq -->
-        <section class="faq">
+        <section class="faq" id="faq">
 
             <div class="faq-container">
                 <div class="title-style">
@@ -123,32 +124,152 @@
                 </div>
                 
                 <div class="faq-section">
-                    <h3>general questions</h3>
-
-                    <div onclick="faqSwitch(this)" class="faq-question">
+                    <h3>General Questions</h3>
+                    <div class="faq-question" onclick="faqSwitch(this)">
                         <div class="faq-title-chevron">
                             <h4>What is mind2.0?</h4>
-                            <img src="/projects/mind20/image/Chevron up.svg" style="height:1.5rem" alt="chevron-up">
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
                         </div>
                         <div class="faq-text">
                             <p>mind2.0 is an AI-powered second brain designed to enhance memory retention, assist with tasks via voice recognition, and seamlessly integrate with your digital workflow.</p>
                         </div>
                     </div>
-
-                    <div onclick="faqSwitch(this)" class="faq-question">
-                        <div class="faq-title-chevron">
-                            <h4>What is mind2.0?</h4>
-                            <img src="/projects/mind20/image/Chevron up.svg" style="height:1.5rem" alt="chevron-up">
-                        </div>
-                        <div class="faq-text">
-                            <p>mind2.0 is an AI-powered second brain designed to enhance memory retention, assist with tasks via voice recognition, and seamlessly integrate with your digital workflow.</p>
-                        </div>
-                    </div>
-
                     
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>How does mind2.0 improve productivity?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>mind2.0 eliminates the need for manual organization by remembering past interactions, retrieving important information instantly, and automating tasks across multiple apps and devices.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>Who is mind2.0 for?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>Anyone who wants to work smarter, not harder—including professionals, students, researchers, and creatives looking for a personal AI assistant.</p>
+                        </div>
+                    </div>
                 </div>
                 
+                <div class="faq-section">
+                    <h3>Features & Functionality</h3>
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>How does mind2.0’s memory retention work?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>mind2.0 remembers all interactions, allowing you to search and recall past conversations, research, and notes instantly.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>Can I use voice commands to control mind2.0?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>Yes! mind2.0 has built-in voice recognition, so you can activate the AI assistant, retrieve data, set reminders, or even control connected apps—all hands-free.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>What apps and software does mind2.0 integrate with?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>mind2.0 connects with productivity tools (Notion, Trello, Google Workspace), communication apps (Slack, Microsoft Teams), entertainment platforms (Spotify, YouTube), and more.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>Does mind2.0 work with hardware like smart hubs or IoT devices?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>Yes! mind2.0 can connect with smart hubs and IoT devices, making it easier to automate your workspace and control devices via AI assistance.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-section">
+                    <h3>Privacy & Security</h3>
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>Is my data secure with mind2.0?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>Absolutely. We prioritize data encryption and user privacy, ensuring that your stored information remains safe and confidential.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>Can I delete my stored data?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>Yes. You have full control over your data and can manage or delete stored information whenever you choose.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-section">
+                    <h3>Pricing & Availability</h3>
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>Is mind2.0 free to use?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>We offer a free version with essential features. A premium plan unlocks advanced capabilities such as deeper integrations, extended memory retention, and priority support.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>When will mind2.0 be available?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>mind2.0 is currently in early access. Sign up today to be among the first to experience it!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-section">
+                    <h3>Support & Troubleshooting</h3>
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>How do I get started with mind2.0?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>Simply sign up for free, follow the onboarding guide, and start using your AI-powered second brain instantly.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-question" onclick="faqSwitch(this)">
+                        <div class="faq-title-chevron">
+                            <h4>I’m experiencing issues. How can I get support?</h4>
+                            <img src="/projects/mind20/image/chevron-up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>Visit our Help Center, check our community forum, or contact our support team via support@mind20.com.</p>
+                        </div>
+                    </div>
+                </div>
+                     
             </div>
+            
         </section>
 
         <script>
@@ -163,7 +284,7 @@
                 } else {
                     faqText.classList.add("open"); // Open
                     chevron.style.transform = "rotate(180deg)"; // Rotate chevron
-                    element.style.backgroundColor = "#dedede"; // Change background color
+                    element.style.backgroundColor = "#e3e3e3"; // Change background color
                 }
             }
 
@@ -173,7 +294,24 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <div class="footer-container">
+            <img src="/projects/mind20/image/mind20-logo-white.svg" style="height: 2rem;" alt="mind20 logo">
+            <div class="footer-links">
+                <a href="#">about</a>
+                <a href="#">the 2.0 formula</a>
+                <a href="#">frequently asked question</a>
+                <a href="#">contact us</a>
+                <a href="#">partners</a>
+                <a href="#">newsroom</a>
+            </div>
+            <div style="height: 1px; width: 872px; background-color: #fff;"></div>
+            <div class="terms">
+                <p>By using Mind2.0, you agree to our Terms of Service and Privacy Policy. Mind2.0 is designed to enhance productivity and workflow through AI-powered assistance.
+                    Data Privacy: Your data is securely stored and will not be shared without consent. Mind2.0 is intended for personal and professional use only. Any misuse, including automated scraping or unauthorized access, is prohibited.
+                    While Mind2.0 aims to provide accurate and intelligent assistance, we do not guarantee 100% accuracy in all AI-generated responses. Mind2.0 connects with third-party apps and services. Users are responsible for reviewing and agreeing to the terms of those services. We reserve the right to update Mind2.0’s features, pricing, and policies at any time.<br/>For more details, please visit our Full Terms & Conditions and Privacy Policy.
+                </p>
+            </div>
+        </div>
     </footer>
 
 </body>
