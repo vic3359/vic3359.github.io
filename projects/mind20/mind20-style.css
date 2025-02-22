@@ -63,6 +63,11 @@ h3 {
     font-weight: 500;
 }
 
+h4 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
 p {
     color: #636363;
 }
@@ -184,7 +189,7 @@ section {
     flex: 4;
 }
 
-/* about section */
+/* final cta section */
 
 .final-cta {
     background-color: #161616;
@@ -237,4 +242,46 @@ section {
     color: #161616;
     font-size: 1.125rem;
     font-weight: 500;
+}
+
+/* the 2.0 formula section */
+
+.faq-container {
+    width: 1000px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.faq-question {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color:#f0f0f0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+.faq-title-chevron {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.faq-text {
+    max-height: 0; /* Start hidden */
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out, padding 0.2s ease-in-out;
+    padding: 0; /* Remove padding when hidden */
+}
+
+.faq-text.open {
+    max-height: 200px; /* Adjust based on content height */
+    padding: 10px 0; /* Add padding when visible */
 }

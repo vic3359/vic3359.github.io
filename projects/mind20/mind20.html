@@ -113,40 +113,61 @@
             </div>
         </section>
 
-        <!-- the 2.0 formula -->
-        <section class="the20formula">
+        <!-- faq -->
+        <section class="faq">
 
-            <div class="the20formula-container">
+            <div class="faq-container">
                 <div class="title-style">
                     <img src="/projects/mind20/image/double-dot-black.svg" style="height: 1rem;" alt="double-dot-black">
-                    <h2>the 2.0 formula</h2>
+                    <h2>frequently asked questions</h2>
                 </div>
+                
+                <div class="faq-section">
+                    <h3>general questions</h3>
 
-                <div class="formula-card">
-                    <img src="/projects/mind20/image/smart-memory.svg" style="flex: 1;" alt="smart-memory">
-                    <div class="formula-card-text">
-                        <h3>Smart Memory Retention</h3>
-                        <p> mind2.0 remembers every interaction. Mentioned a research topic two months ago? It brings it back instantly—no more digging through notebooks or folders.</p>
+                    <div onclick="faqSwitch(this)" class="faq-question">
+                        <div class="faq-title-chevron">
+                            <h4>What is mind2.0?</h4>
+                            <img src="/projects/mind20/image/Chevron up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>mind2.0 is an AI-powered second brain designed to enhance memory retention, assist with tasks via voice recognition, and seamlessly integrate with your digital workflow.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="formula-card">
-                    <img src="/projects/mind20/image/voice-recognition.svg" style="flex: 1;" alt="voice-recognition">
-                    <div class="formula-card-text">
-                        <h3>Voice-Recognition AI Assistant</h3>
-                        <p> Activate mind2.0 with a simple voice command for human-like assistance. It can search the web, explain complex topics, set schedules and reminders, and much more—all hands-free.</p>
+                    <div onclick="faqSwitch(this)" class="faq-question">
+                        <div class="faq-title-chevron">
+                            <h4>What is mind2.0?</h4>
+                            <img src="/projects/mind20/image/Chevron up.svg" style="height:1.5rem" alt="chevron-up">
+                        </div>
+                        <div class="faq-text">
+                            <p>mind2.0 is an AI-powered second brain designed to enhance memory retention, assist with tasks via voice recognition, and seamlessly integrate with your digital workflow.</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="formula-card">
-                    <img src="/projects/mind20/image/seamless-digital.svg" style="flex: 1;" alt="seamless-digital">
-                    <div class="formula-card-text">
-                        <h3>Seamless Digital Integration</h3>
-                        <p> From productivity tools to entertainment apps, mind2.0 connects effortlessly. Analyze reports in your spreadsheet, check email replies, or even create a new playlist in your favorite music app—all from one place.</p>
-                    </div>
+                    
                 </div>
+                
             </div>
         </section>
+
+        <script>
+            function faqSwitch(element) {
+                var faqText = element.querySelector(".faq-text"); // Find the answer div
+                var chevron = element.querySelector("img[alt='chevron-up']"); // Find the chevron icon
+
+                if (faqText.classList.contains("open")) {
+                    faqText.classList.remove("open"); // Close
+                    chevron.style.transform = "rotate(0deg)"; // Reset chevron rotation
+                    element.style.backgroundColor = "#f0f0f0"; // Change background color
+                } else {
+                    faqText.classList.add("open"); // Open
+                    chevron.style.transform = "rotate(180deg)"; // Rotate chevron
+                    element.style.backgroundColor = "#dedede"; // Change background color
+                }
+            }
+
+        </script>
 
         
     </main>
