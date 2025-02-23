@@ -14,7 +14,9 @@
 
     <!-- Navbar -->
     <header>
-        <img src="/projects/mind20/image/mind20-logo.svg" alt="mind20 logo">
+        <a href="/projects/mind20/mind20.html">
+            <img src="/projects/mind20/image/mind20-logo.svg" alt="mind20 logo">
+        </a>
         <nav>
             <ul>
                 <li><a href="#about">about</a></li>
@@ -28,12 +30,12 @@
     <main>
         <!-- Hero screen -->
         <section class="hero-content">
-            <div class ="hero-content-texts">
+            <div class ="hero-content-texts scroll-animate">
                 <img src="/projects/mind20/image/mind20-logo.svg" style="height: 2rem;" alt="mind20 logo">
                 <h1>Unlock limitless <br/> cognitive power with AI</h1>
                 <p>Your all-in-one AI-powered second brain with smart<br/>memory retention, a voice-recognition AI assistant, and<br/>seamless digital integration.</p>
 
-                <div class="cta-platform">
+                <div class="cta-platform" style="animation-delay: 1s;">
                     <div class="cta-platform-text">
                         <p>available on:</p>
                         <p style="color: #161616;">web . iOS . ipadOS . android</p>
@@ -52,7 +54,7 @@
             <div class="about-container">
                 <img src="/projects/mind20/image/mind20-iphone-mockup.png" style="height: 50vh;" alt="mind20-iphone-mockup">
 
-                <div class ="about-texts">
+                <div class ="about-texts scroll-animate">
                     <div class="title-style">
                         <img src="/projects/mind20/image/double-dot-white.svg" style="height: 1rem;" alt="double-dot-white">
                         <h2>It’s not easy to keep up with the productivity demands of today’s world. Until mind2.0.</h2>
@@ -100,7 +102,7 @@
 
         <!-- final-cta -->
         <section class="final-cta">
-            <div class="final-cta-container">
+            <div class="final-cta-container scroll-animate">
                 <div class ="final-cta-container-texts">
                     <div class="title-style">
                         <img src="/projects/mind20/image/double-dot-white.svg" style="height: 1rem;" alt="double-dot-white">
@@ -287,6 +289,24 @@
                     element.style.backgroundColor = "#e3e3e3"; // Change background color
                 }
             }
+
+            // Create an intersection observer to detect when an element enters the viewport
+            const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                // Add 'visible' class when element is in view
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Stop observing after the element becomes visible
+                }
+            });
+            }, { threshold: 0.5 }); // Trigger when 50% of the element is in view
+
+            // Target the element you want to animate
+            const elements = document.querySelectorAll('.scroll-animate');
+            elements.forEach(element => {
+            observer.observe(element); // Start observing each element
+            });
+
 
         </script>
 

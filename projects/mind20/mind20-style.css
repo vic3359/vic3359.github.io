@@ -25,6 +25,7 @@ header {
     width: 100%;
     justify-content: space-between;
     position:fixed;
+    z-index: 3;
 }
 
 header img {
@@ -94,6 +95,22 @@ section {
 }
 
 /* hero section */
+
+/* hero fadein animation */
+
+/* Initial state: hidden and offset to the right */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px); /* Start from the right */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  /* When element is visible: fade in and move to its original position */
+  .scroll-animate.visible {
+    opacity: 1;
+    transform: translateX(0); /* End position */
+  }
+  
 
 .hero-content {
     display: flex;
