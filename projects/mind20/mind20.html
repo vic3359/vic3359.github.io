@@ -25,6 +25,10 @@
                 <li><a href="#">contact us</a></li>
             </ul>
         </nav>
+
+        <!-- <div class="mobile-menu">
+            <img src="/projects/mind20/image/menu.svg" alt="menu">
+        </div> -->
     </header>
 
     <main>
@@ -53,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-img-wrapper">
+            <div class="hero-img-wrapper scroll-wrapper">
                 <img src="/projects/mind20/image/mind20-ipad-mockup.png" alt="mind20-ipad-mockup">
             </div>
         </section>
@@ -317,6 +321,38 @@
             elements.forEach(element => {
             observer.observe(element); // Start observing each element
             });
+
+            //scroll horizontal first
+            let isHorizontalScrolling = false; // Flag to track if horizontal scroll has started
+
+            document.addEventListener("scroll", () => {
+                let scrollY = window.scrollY;
+                let startScrollPosition = 400; // The Y position to start horizontal scroll
+                let scrollLimit = 2000; // Adjust this limit to control how far the scroll goes
+
+                // Check if we've reached the start position for horizontal scrolling
+                if (scrollY >= startScrollPosition) {
+                    if (!isHorizontalScrolling) {
+                        // Set the initial transform to 0 on first scroll trigger
+                        document.querySelector(".scroll-wrapper").style.transform = "translateX(0px)";
+                        isHorizontalScrolling = true; // Start horizontal scrolling
+                    }
+
+                    // Calculate the horizontal scroll based on the vertical scroll
+                    let horizontalScroll = (scrollY - startScrollPosition) * 2; // Adjust the multiplier (2) for longer scroll
+                    document.querySelector(".scroll-wrapper").style.transform = `translateX(${-Math.min(horizontalScroll, scrollLimit)}px)`;
+                } else {
+                    if (isHorizontalScrolling) {
+                        // Reset transformation when scrolling back to the top
+                        document.querySelector(".scroll-wrapper").style.transform = "translateX(0px)";
+                    }
+                    isHorizontalScrolling = false; // Reset flag when vertical scroll position goes out of range
+                }
+            });
+
+
+
+
 
 
         </script>

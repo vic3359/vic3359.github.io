@@ -377,13 +377,17 @@ footer {
 @media (max-width: 768px) {
     /* Styles for mobile devices */
 
-    html {
-        overflow-x: hidden;
+    body, html { 
+        overflow-x: hidden; 
+        overflow-y: auto;
     }
 
     nav {
         display: none;
     }
+
+    /* header */
+    
 
     /* hero */
     .hero-content {
@@ -414,13 +418,13 @@ footer {
     .hero-img-wrapper {
         height: 70svh;
         width: 100%;
+        overflow:visible;
     }
 
     .hero-img-wrapper img {
         height: 100%;
         max-width: none;
         object-fit: cover;
-        overflow: visible;
     }
 
     /* about */
