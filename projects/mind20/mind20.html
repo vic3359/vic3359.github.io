@@ -65,7 +65,7 @@
         <!-- about mind2.0 -->
         <section class="about" id="about">
             <div class="about-container">
-                <div class="about-img-wrapper">
+                <div class="about-img-wrapper scroll-animate">
                     <img src="/projects/mind20/image/mind20-iphone-mockup.png" alt="mind20-iphone-mockup">
                 </div>
 
@@ -327,8 +327,11 @@
 
             document.addEventListener("scroll", () => {
                 let scrollY = window.scrollY;
-                let startScrollPosition = 400; // The Y position to start horizontal scroll
+                let startScrollPosition = 300; // The Y position to start horizontal scroll
                 let scrollLimit = 2000; // Adjust this limit to control how far the scroll goes
+
+                // Apply smooth transition to the .scroll-wrapper
+                document.querySelector(".scroll-wrapper").style.transition = "transform 0.2s ease-out"; // Customize transition speed and easing here
 
                 // Check if we've reached the start position for horizontal scrolling
                 if (scrollY >= startScrollPosition) {
@@ -349,6 +352,7 @@
                     isHorizontalScrolling = false; // Reset flag when vertical scroll position goes out of range
                 }
             });
+
 
 
 
