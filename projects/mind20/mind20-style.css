@@ -129,6 +129,10 @@ section {
     text-align: center;
 }
 
+.mobile-hero-text {
+    display: none;
+}
+
 .cta-platform {
     border: #c6c6c6 1px solid;
     padding: 1rem;
@@ -155,6 +159,10 @@ section {
 .cta-button-dark p {
     color: #fff;
     font-size: 1.125rem;
+}
+
+.hero-img-wrapper img {
+    max-width: 50vw;
 }
 
 /* about section */
@@ -188,6 +196,10 @@ section {
     gap: 1.5rem;
     align-items:flex-start;
     max-width: 600px;
+}
+
+.about-img-wrapper img {
+    height: 50vh;
 }
 
 /* the 2.0 formula section */
@@ -353,3 +365,109 @@ footer {
     font-weight: 300;
     line-height: 1.6;
 }
+
+.divider{
+    height: 1px; 
+    width: 100%; 
+    background-color: #fff;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+    /* Styles for mobile devices */
+
+    html {
+        overflow-x: hidden;
+    }
+
+    nav {
+        display: none;
+    }
+
+    /* hero */
+    .hero-content {
+        padding: 15svh 1.5rem 4rem 1.5rem;
+        gap: 2rem;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .desktop-hero-text {
+        display: none;
+    }
+
+    .mobile-hero-text {
+        display: flex;
+    }
+
+    .cta-platform {
+        width: 100%;
+    }
+
+    .cta-button-dark {
+        width: 100%;
+    }
+
+    .hero-img-wrapper {
+        height: 70svh;
+        width: 100%;
+    }
+
+    .hero-img-wrapper img {
+        height: 100%;
+        max-width: none;
+        object-fit: cover;
+        overflow: visible;
+    }
+
+    /* about */
+    .about-container {
+        padding: 4rem 1.5rem;
+        flex-direction: column;
+        width: auto;
+        gap: 2rem;
+    }
+
+    .about-img-wrapper img{
+        height: 65svh;
+    }
+
+    /* 2.0 formula */
+
+    .the20formula-container {
+        padding: 4rem 1.5rem;
+    }
+    
+    .formula-card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* final cta */
+    .final-cta-container {
+        width: 100%;
+    }
+
+    .final-cta-container {
+        padding: 4rem 2rem;
+    }
+
+    /* faq */
+    .faq-container {
+        padding: 4rem 1.5rem;
+    }
+
+    /* footer */
+
+    .footer-container {
+        width: 100%;
+        padding: 4rem 2rem;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+    }
+
