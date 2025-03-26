@@ -336,8 +336,7 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 1rem 0 1rem;
-  height: 50vh;
+  padding: 2rem;
   background-color: #ebebeb00 ;
   gap: 2rem;
   position: relative;
@@ -349,7 +348,11 @@ video {
   gap: 1rem;
   width: fit-content;
   z-index: 1;
-  color: #fff;
+  color: #000000;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 12px;
+  backdrop-filter: blur(2px);
 }
 
 .cta-banner h1 {
@@ -358,7 +361,6 @@ video {
 
 .cta-animation {
   width:100vw;
-  height: 50vh;
 }
 
 .email-button {
@@ -374,6 +376,46 @@ video {
 
 .email-button a {
   font-size: 0.8rem;
+}
+
+/* Inquiry Form */
+
+.cta-text-wrapper form {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.cta-text-wrapper span {
+  color: #000000;
+  font-size: 0.8rem;
+}
+
+.cta-text-wrapper button {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
 
@@ -485,6 +527,24 @@ video {
 
   .email-button a {
     font-size: 1rem;
+  }
+
+  .cta-banner {
+    padding: 2rem 1rem;
+  }
+
+  .cta-text-wrapper{
+    padding: 1.5rem 1rem;
+  }
+
+  .cta-text-wrapper button {
+    padding: 0.875rem;
+    border-radius: 8px;
+  }
+
+  .cta-text-wrapper label {
+    padding: 0.875rem;
+    border-radius: 8px;
   }
 
   .footer {
