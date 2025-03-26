@@ -418,6 +418,10 @@ input {
   border-radius: 4px;
 }
 
+::placeholder {
+  color: rgb(0, 0, 0, 0.4);
+}
+
 
 
 /* Footer */
@@ -545,6 +549,10 @@ input {
   .cta-text-wrapper label {
     padding: 0.875rem;
     border-radius: 8px;
+  }
+
+  ::placeholder {
+    font-size: 1rem;
   }
 
   .footer {
