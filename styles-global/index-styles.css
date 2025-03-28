@@ -337,7 +337,7 @@ video {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background-color: #ebebeb00 ;
+  background-color: #ebebeb ;
   gap: 2rem;
   position: relative;
 }
@@ -349,10 +349,6 @@ video {
   width: fit-content;
   z-index: 1;
   color: #000000;
-  padding: 1.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 12px;
-  backdrop-filter: blur(2px);
 }
 
 .cta-banner h1 {
