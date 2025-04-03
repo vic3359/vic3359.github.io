@@ -248,7 +248,8 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100svh;
+  /* height: 100svh; */
+  padding: 4rem 0;
   background-color: #ebebeb;
 }
 
@@ -279,6 +280,7 @@ html, body {
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.5rem;
+  letter-spacing: -1px;
 }
 
 .intro-service h3 {
@@ -548,12 +550,13 @@ input {
   .intro-text h2,
   .intro-service h3 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 2rem;
   }
 
   .intro-service h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-top: unset;
   }
 
   .list-layout{
