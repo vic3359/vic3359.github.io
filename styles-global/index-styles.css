@@ -13,7 +13,7 @@ html {
 html, body {
     width: 100vw;
     margin: 0;
-    background-color: #F5F5F9;
+    background-color: #fafafa;
   }
   
   /* navbar */
@@ -113,12 +113,11 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100svh;
-  padding-top: 4rem;
 }
 
 .hero h1 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 500;
   color: #000000;
   text-align: left;
   letter-spacing: -1px;
@@ -156,7 +155,6 @@ html, body {
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    gap: 1rem;
 }
 
 .hero-img-wrapper {
@@ -170,6 +168,7 @@ html, body {
   border-radius: 0.5rem;
   justify-content: center;
   padding: 1rem;
+  margin-top: 1.5rem;
 }
 
 .hero-cta:hover {
@@ -510,8 +509,10 @@ input {
   /* Styles for mobile */
 
   .hero {
-    padding-top: 0;
+    padding: 2rem 0.5rem;
+    height: unset;
   }
+
   .hero-body{
     flex-direction:column-reverse;
     gap: 0;
