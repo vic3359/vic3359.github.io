@@ -509,7 +509,7 @@ input {
   /* Styles for mobile */
 
   .hero {
-    padding: 2rem 0.5rem;
+    padding: 3rem 0;
     height: unset;
   }
 
@@ -525,13 +525,13 @@ input {
   }
 
   .hero-text-wrapper h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 
   .hero-text-wrapper h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
     text-align: center;
   }
   
