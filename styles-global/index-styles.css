@@ -249,8 +249,7 @@ html, body {
   justify-content: center;
   align-items: center;
   /* height: 100svh; */
-  padding: 4rem 0;
-  background-color: #ebebeb;
+  padding-bottom: 2rem;
 }
 
 .intro-body {
@@ -511,7 +510,7 @@ input {
   /* Styles for mobile */
 
   .hero {
-    padding: 4rem 0;
+    padding: 4rem 0 0 0;
     height: unset;
   }
 
@@ -539,7 +538,7 @@ input {
   
   .intro {
     height: auto;
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
   }
 
   .intro-body {
