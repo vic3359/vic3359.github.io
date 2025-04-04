@@ -15,6 +15,10 @@ html, body {
     margin: 0;
     background-color: #fafafa;
   }
+
+  h1, h2{
+    letter-spacing: -1px;
+  }
   
   /* navbar */
   .navbar {
@@ -120,7 +124,6 @@ html, body {
   font-weight: 500;
   color: #000000;
   text-align: left;
-  letter-spacing: -1px;
 }
 
 .hero h2 {
@@ -128,7 +131,6 @@ html, body {
   font-weight: 300;
   color: #000000;
   text-align: left;
-  letter-spacing: -1px;
   line-height: 2.5rem;
 }
 
@@ -137,7 +139,6 @@ html, body {
   font-weight: 300;
   color: #000;
   text-align: left;
-  letter-spacing: -1px;
   text-decoration: none;
 }
 
